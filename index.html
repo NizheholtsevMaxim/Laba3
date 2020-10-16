@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laba 2</title>
     <link media="all" rel="stylesheet" href="styles.css">
+    <link media="all" rel="stylesheet" href="calculator.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700,700italic" type="text/css">
     <style>
       body {
@@ -54,37 +55,53 @@
       <div id="main">
 
         <div id='var-6' class="container">
-          <h1>Вариант №6</h1>
-          <table id='table-1' border='0' cellspacing="0">
-            <thead>
-              <tr>
-                <th ></th>
-                <th>2017</th>
-                <th>2018</th>
-                <th>2019</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>ИТех</td>
-                <td align='center'>93</td>
-                <td align='center'>97</td>
-                <td align='center'>98</td>
-              </tr>
-              <tr>
-                <td>КСх</td>
-                <td align='center'>91</td>
-                <td align='center'>98</td>
-                <td align='center'>97</td>
-              </tr>
-              <tr>
-                <td>СПО</td>
-                <td align='center'>96</td>
-                <td align='center'>94</td>
-                <td align='center'>97</td>
-              </tr>
-            </tbody>
-          </table>
+          <h1>Вариант №7</h1>
+          <div class="holder">
+            <!-- CALCULATOR -->
+            <div class="calculator">
+              <!-- CALCULATOR FORM -->
+              <form class="calculator__form">
+                <!-- CALCULATOR ROW -->
+                <div class="calculator__row">
+                  <input class="calculator__display" id="display" type="text" disabled />
+                </div>
+                <!-- CALCULATOR ROW -->
+                <div class="calculator__row">
+                  <button type="button" value="c" class="calculator__key calculator__clear"></button>
+                  <button type="button" value="<--" class="calculator__key calculator__backspace"></button>
+                  <button type="button" value="^3" class="calculator__key calculator__power"></button>
+                  <button type="button" value="+" class="calculator__key calculator__button"></button>
+                </div>
+                <!-- CALCULATOR ROW -->
+                <div class="calculator__row">
+                  <button type="button" value="9" class="calculator__key calculator__button"></button>
+                  <button type="button" value="8" class="calculator__key calculator__button"></button>
+                  <button type="button" value="7" class="calculator__key calculator__button"></button>
+                  <button type="button" value="-" class="calculator__key calculator__button"></button>
+                </div>
+                <!-- CALCULATOR ROW -->
+                <div class="calculator__row">
+                  <button type="button" value="6" class="calculator__key calculator__button"></button>
+                  <button type="button" value="5" class="calculator__key calculator__button"></button>
+                  <button type="button" value="4" class="calculator__key calculator__button"></button>
+                  <button type="button" value="*" class="calculator__key calculator__button"></button>
+                </div>
+                <!-- CALCULATOR ROW -->
+                <div class="calculator__row">
+                  <button type="button" value="3" class="calculator__key calculator__button"></button>
+                  <button type="button" value="2" class="calculator__key calculator__button"></button>
+                  <button type="button" value="1" class="calculator__key calculator__button"></button>
+                  <button type="button" value="/" class="calculator__key calculator__button"></button>
+                </div>
+                <!-- CALCULATOR ROW -->
+                <div class="calculator__row">
+                  <button type="button" value="0" class="calculator__key calculator__button"></button>
+                  <button type="button" value="." class="calculator__key calculator__button"></button>
+                  <button type="button" value="=" class="calculator__key calculator__key--equal"></button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
       <footer id="footer">
@@ -92,6 +109,8 @@
           <li>© Copyright 2020 Maxim</li>
         </ul>
       </footer>
-    </div>
+    </div>  
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>
