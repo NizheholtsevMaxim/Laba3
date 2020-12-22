@@ -1,116 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laba 2</title>
-    <link media="all" rel="stylesheet" href="styles.css">
-    <link media="all" rel="stylesheet" href="calculator.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700,700italic" type="text/css">
-    <style>
-      body {
-        margin: 0;
-        color: #7e7e7e;
-        font: 17px/1.412 "Istok Web", "Arial", "Helvetica", sans-serif;
-        background: #f9f9f9;
-        overflow-y: scroll;
-        min-width: 320px;
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: none;
-      }
-    </style>
-  </head>
-  <body class="home-page">
-    <div id="wrapper">
-      <header id="header">
-        <div class="panel">
-          <div id='header-container' class="container">
-            <strong class="logo"><a href="#">Laba 2</a></strong>
-            <ul>
-              <li><a href="#">Home</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="hero">
-          <div class="img">
-            <div class="s1">
-              <div class="s2" style="background: url('images/banner.jpg') no-repeat 0 0; background-size: cover; width: 100%; height: 300px; display:flex; justify-content: center; align-items: center; color: #fff;">
-                <h1>Лабораторное работа №2</h1>
-              </div>
-            </div>
-          </div>
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
 
-        </div>
-        <div class="navigation">
-          <nav>
-            <ul>
-              <li class="active"><a href="#">Пункт 1</a></li>
-              <li><a href="#">Пункт 2</a></li>
-              <li><a href="#">Пункт 3</a></li>
-              <li><a href="#">Пункт 4</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <div id="main">
+<body>
+    <div class="imageContainer">
+        <img class="image" />
+    </div>
+    <div class="controlPanel">
+        <span class="field">
+            <p>Height: </p>
+            <input type="number" name="height" />
+        </span>
+        <span class="field">
+            <p>Width: </p>
+            <input type="number" name="width" />
+        </span>
+        <span class="field">
+            <p>Border width: </p>
+            <input type="number" name="borderWidth" />
+        </span>
+        <span class="field">
+            <p>Alt text: </p>
+            <input type="text" name="altText" />
+        </span>
+    </div>
+</body>
 
-        <div id='var-6' class="container">
-          <h1>Вариант №7</h1>
-          <div class="holder">
-            <!-- CALCULATOR -->
-            <div class="calculator">
-              <!-- CALCULATOR FORM -->
-              <form class="calculator__form">
-                <!-- CALCULATOR ROW -->
-                <div class="calculator__row">
-                  <input class="calculator__display" id="display" type="text" disabled />
-                </div>
-                <!-- CALCULATOR ROW -->
-                <div class="calculator__row">
-                  <button type="button" value="c" class="calculator__key calculator__clear"></button>
-                  <button type="button" value="<--" class="calculator__key calculator__backspace"></button>
-                  <button type="button" value="^3" class="calculator__key calculator__power"></button>
-                  <button type="button" value="+" class="calculator__key calculator__button"></button>
-                </div>
-                <!-- CALCULATOR ROW -->
-                <div class="calculator__row">
-                  <button type="button" value="9" class="calculator__key calculator__button"></button>
-                  <button type="button" value="8" class="calculator__key calculator__button"></button>
-                  <button type="button" value="7" class="calculator__key calculator__button"></button>
-                  <button type="button" value="-" class="calculator__key calculator__button"></button>
-                </div>
-                <!-- CALCULATOR ROW -->
-                <div class="calculator__row">
-                  <button type="button" value="6" class="calculator__key calculator__button"></button>
-                  <button type="button" value="5" class="calculator__key calculator__button"></button>
-                  <button type="button" value="4" class="calculator__key calculator__button"></button>
-                  <button type="button" value="*" class="calculator__key calculator__button"></button>
-                </div>
-                <!-- CALCULATOR ROW -->
-                <div class="calculator__row">
-                  <button type="button" value="3" class="calculator__key calculator__button"></button>
-                  <button type="button" value="2" class="calculator__key calculator__button"></button>
-                  <button type="button" value="1" class="calculator__key calculator__button"></button>
-                  <button type="button" value="/" class="calculator__key calculator__button"></button>
-                </div>
-                <!-- CALCULATOR ROW -->
-                <div class="calculator__row">
-                  <button type="button" value="0" class="calculator__key calculator__button"></button>
-                  <button type="button" value="." class="calculator__key calculator__button"></button>
-                  <button type="button" value="=" class="calculator__key calculator__key--equal"></button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer id="footer">
-        <ul>
-          <li>© Copyright 2020 Maxim</li>
-        </ul>
-      </footer>
-    </div>  
-    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-  </body>
+<script src="./scripts/script.js"></script>
+
 </html>

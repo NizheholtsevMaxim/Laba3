@@ -1,0 +1,22 @@
+.controlPanel {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imageContainer {
+    text-align: center;
+}
+
+.image {
+    border-style: solid;
+}
+
+.field {
+    margin-right: 1rem;
+}
+
+p {
+    margin: 0;
+}
