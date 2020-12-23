@@ -30,7 +30,7 @@ function setDefaultImageSettings() {
     image.style.height = defaultSettings.heigth;
     image.style.width = defaultSettings.width;
     image.style["border-width"] = defaultSettings.borderWidth;
-    image.style.alt = defaultSettings.altText;
+    image.alt = defaultSettings.altText;
     image.src = defaultSettings.src;
 }
 
@@ -57,12 +57,12 @@ function applyStyleChanges() {
     image.style.height = validateAndReturn(height, settings.height) + settings.height.unit;
     image.style.width = validateAndReturn(width, settings.width) + settings.width.unit;
     image.style["border-width"] = validateAndReturn(borderWidth, settings.borderWidth) + settings.borderWidth.unit;
-    image.style.alt = isValidText(altText) ? altText : defaultSettings.altText;
+    image.alt = isValidText(altText) ? altText : defaultSettings.altText;
 
     document.getElementsByName("height")[0].value = parseInt(image.style.height);
     document.getElementsByName("width")[0].value = parseInt(image.style.width);
     document.getElementsByName("borderWidth")[0].value = parseInt(image.style["border-width"]);
-    document.getElementsByName("altText")[0].value = image.style.alt;
+    document.getElementsByName("altText")[0].value = image.alt;
 }
 
 function validateAndReturn(value, valueSettings) {
