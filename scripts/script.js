@@ -4,7 +4,7 @@ const defaultSettings = {
     borderWidth: "1px",
     altText: "Here should ba an image",
     src: "./images/9.jpg"
-}
+};
 
 const settings = {
     height: {
@@ -22,7 +22,7 @@ const settings = {
         max: 1000,
         unit: "px"
     }
-}
+};
 
 function setDefaultImageSettings() {
     var image = document.getElementsByClassName("image")[0];
@@ -72,10 +72,6 @@ function validateAndReturn(value, valueSettings) {
         return valueSettings.max;
     }
     return value;
-}
-
-function isValidNumeric(value, maxValue) {
-    return value >= 0 && value <= maxValue;
 }
 
 function isValidText(value) {
